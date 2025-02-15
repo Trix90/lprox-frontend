@@ -23,7 +23,7 @@ const Checkout = () => {
         //call the API with the data
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.post('http://localhost:5000/api/plans/buy', {
+            const response = await axios.post('https://lprox-backend.vercel.app/api/plans/buy', {
                 plan_id
             }, {
                 headers: {

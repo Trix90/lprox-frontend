@@ -20,7 +20,7 @@ const Header: React.FC = () => {
             const token = localStorage.getItem('token');
             if (!token) return;
 
-            const response = await axios.get('http://localhost:5000/api/auth/me', {
+            const response = await axios.get('https://lprox-backend.vercel.app/api/auth/me', {
                 headers: { Authorization: `Bearer ${token}` },
             });
 

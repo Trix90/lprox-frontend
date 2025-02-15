@@ -36,7 +36,7 @@ const Home = () => {
     useEffect(() => {
         if (!hasFetched.current) {
             hasFetched.current = true;
-            axios.get('http://localhost:5000/api/plans/list', {
+            axios.get('https://lprox-backend.vercel.app/api/plans/list', {
                 headers: {
                     "Authorization": `Bearer ${token}`
                 }

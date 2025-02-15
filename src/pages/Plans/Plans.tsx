@@ -90,7 +90,7 @@ const Plans = () => {
     useEffect(() => {
         if (!hasFetched.current) {
             hasFetched.current = true;
-            axios.get('http://localhost:5000/api/plans/get', {
+            axios.get('https://lprox-backend.vercel.app/api/plans/get', {
                 headers: {
                     "Authorization": `Bearer ${token}`
                 },
@@ -127,7 +127,7 @@ const Plans = () => {
                 });
 
 
-            axios.get('http://localhost:5000/api/plans/country_list', {
+            axios.get('https://lprox-backend.vercel.app/api/plans/country_list', {
                 headers: {
                     "Authorization": `Bearer ${token}`
                 },
@@ -182,7 +182,7 @@ const Plans = () => {
             setProxyTargetingRegion('-region-' + value);
 
             // Fetch states based on selected country
-            axios.get(`http://localhost:5000/api/plans/state_list?country_code=${value}`, {
+            axios.get(`https://lprox-backend.vercel.app/api/plans/state_list?country_code=${value}`, {
                 headers: {
                     "Authorization": `Bearer ${token}`
                 }
@@ -211,7 +211,7 @@ const Plans = () => {
             setProxyTargetingState('-st-' + value);
 
             // Fetch cities based on selected state
-            axios.get(`http://localhost:5000/api/plans/city_list?country_code=${selectedCountry}&state_code=${value}`, {
+            axios.get(`https://lprox-backend.vercel.app/api/plans/city_list?country_code=${selectedCountry}&state_code=${value}`, {
                 headers: {
                     "Authorization": `Bearer ${token}`
                 }
