@@ -1,0 +1,135 @@
+.dashboard-card .card-body .tops {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.dashboard-card .card-body .tops img {
+    width: 44px;
+    background: #0086ff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.dashboard-card .card-body .tops h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #191b1c;
+}
+
+.dashboard-card .card-body .tops p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #191b1c;
+}
+
+.btn-success {
+    background: #e5f6e7 !important;
+    border: 1px solid #198754 !important;
+    color: #198754 !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    padding: 6px 10px !important;
+}
+
+.btn-info {
+    background: #e7f1ff !important;
+    border: 1px solid #0086ff !important;
+    color: #0086ff !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    padding: 6px 10px !important;
+}
+
+.dashboard-footer {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-footer p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #191b1c;
+}
+
+/* 
+<div className="col-12 col-md-6 mb-3" key={plan._id}>
+    <div className="card plan-card">
+        <div className="card-body">
+            <CircularProgressBar percentage={75} />
+            <div className="plan-text">
+                <h5>{storePlans[plan.product]?.product_name || plan.product}<span> {plan.bandwidth}GB</span></h5>
+                <p>Ideal proxy for any use case & purpose. By accessing our network 10M+ IP
+                    pool non-subnet linked, bans and blocks are non-existent.</p>
+            </div>
+            <div className="plan-footer">
+                <div className="plan-info">
+                    <h5>Plan ID</h5>
+                    <p className="mb-0">{plan.plan_id}</p>
+                </div>
+                <div className="plan-info">
+                    <h5>Data Allowance</h5>
+                    <p className="mb-0">{plan.bandwidth}GB</p>
+                </div>
+                <div className="plan-info">
+                    <h5>Expires</h5>
+                    <p className="mb-0">{plan.createdAt}</p>
+                </div>
+                <div className="plan-info">
+                    <Link to={`/plans/${plan._id}`} className="btn btn-info">View Plan</Link>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> */
+
+.plan-card .tops {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.plan-card h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #191b1c;
+}
+
+.plan-card h5 span {
+    color: #0086ff;
+}
+
+.plan-card p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #191b1c;
+}
+
+.plan-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.plan-info h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #191b1c;
+    margin-bottom: 0px;
+}
+
+.plan-info p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #191b1c;
+}

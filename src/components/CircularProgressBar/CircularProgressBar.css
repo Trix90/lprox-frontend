@@ -1,0 +1,13 @@
+.progress-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.progress-wrapper .percentage {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    color: #191b1c;
+}

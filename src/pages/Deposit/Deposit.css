@@ -1,0 +1,52 @@
+.btn-crypto {
+    background-color: #2fb851 !important;
+    border-color: #2fb851 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.btn-crypto:hover {
+    background-color: #2fb851 !important;
+    border-color: #2fb851 !important;
+}
+
+.btn-stripe {
+    background-color: #6772e5 !important;
+    border-color: #6772e5 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.btn-stripe:hover {
+    background-color: #6772e5 !important;
+    border-color: #6772e5 !important;
+}
+
+.btn-crypto:hover,
+.btn-stripe:hover {
+    filter: brightness(110%);
+}
+
+.payment-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.payment-logos img.cryptomus-logo {
+    height: 25px;
+}
+
+.payment-logos img.stripe-logo {
+    height: 35px;
+}
+
+.payment-logos .divider {
+    height: 24px;
+    width: 1px;
+    background: #6f6f6f;
+    margin: 0 10px;
+}
+
+.payment-logos .badge {
+    font-size: 10px !important;
+}

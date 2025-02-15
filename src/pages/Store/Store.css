@@ -1,0 +1,145 @@
+.product-title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c5dcff;
+}
+
+.product-dsc {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c5dcff;
+    color: #18181880;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #191b1c;
+}
+
+.card-title span {
+    color: #1675ff;
+    font-weight: 600;
+}
+
+.price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 22px;
+    font-weight: 500;
+    color: #191b1c;
+}
+
+.price span {
+    font-size: 12px;
+    color: #1675ff;
+}
+
+.product-features {
+    padding-top: 10px;
+    padding-inline: 3px;
+}
+
+.product-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-features ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-weight: 400;
+    color: #191b1c;
+    padding: 5px 0;
+}
+
+.product-features ul li span {
+    font-weight: 200;
+    color: #1675ff;
+    margin-right: 10px;
+}
+
+
+.product-buy {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-buy button {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    background: #1675ff;
+    border: none;
+}
+
+.product-buy button:hover {
+    background: #0056b3;
+}
+
+.terms {
+    font-size: 14px;
+    font-weight: 400;
+    color: #191b1c;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.terms:hover {
+    color: #1675ff;
+}
+
+/* 
+<div className="store-filter-wrapper">
+<button className="btn btn-primary active residence">Residential</button>
+<button className="btn btn-primary bandwidth">Bandwidth</button>
+<button className="btn btn-primary datacenter">Datacenter</button>
+</div> */
+
+.store-filter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+}
+
+.store-filter-wrapper button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    color: #191b1c;
+    align-items: center;
+    justify-content: center;
+    background: #1675ff00;
+    border: none;
+}
+
+.store-filter-wrapper button.active,
+.store-filter-wrapper button:focus,
+.store-filter-wrapper button:active {
+    background: #1675ff !important;
+    color: #ffffff !important;
+}
