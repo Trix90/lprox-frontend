@@ -107,7 +107,8 @@ const Login = () => {
                                 </div>
                                 <div className="form-group mb-3">
                                     <div className="d-flex justify-content-between">
-                                        <Link to="/login">Already have an account?</Link>
+                                        <Link to="/register">Create an account</Link>
+                                        <Link to="/forgot-password">Forgot password?</Link>
                                     </div>
                                 </div>
                             </div>
