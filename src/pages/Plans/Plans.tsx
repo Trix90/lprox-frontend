@@ -526,7 +526,17 @@ const Plans = () => {
                                     <div className="col-12 col-md-6">
                                         <div className="form-group mb-2">
                                             <label className="form-label">Session Amount</label>
-                                            <input type="text" className="form-control" value={stickySessionAmount} onChange={(e) => setStickySessionAmount(parseInt(e.target.value))} />
+                                            <input type="number" className="form-control" value={stickySessionAmount} min="1" max="2000"
+                                                onChange={(e) => {
+                                                    //from 1 to 2000
+                                                    let value = parseInt(e.target.value);
+                                                    if (value < 1) {
+                                                        value = 1;
+                                                    } else if (value > 2000) {
+                                                        value = 2000;
+                                                    }
+                                                    setStickySessionAmount(value);
+                                                }} />
                                         </div>
                                     </div>
                                     <div className="col-12">
